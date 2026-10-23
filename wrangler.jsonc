@@ -1,0 +1,14 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "bwe-mock-api",
+  "main": "worker/index.ts",
+  "compatibility_date": "2026-10-23",
+  "d1_databases": [
+    {
+      "binding": "bwe_mock_db",
+      "database_name": "bwe-mock-db",
+      "database_id": "0050e1c4-b368-4047-99d7-c6c72607f27a",
+      "migrations_dir": "migrations"
+    }
+  ]
+}
