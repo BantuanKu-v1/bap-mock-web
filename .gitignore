@@ -22,3 +22,11 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# Cloudflare workers
+.dev.vars
+.dev.vars*
+.wrangler/
+
+# Authentication test files
+cookies.txt
