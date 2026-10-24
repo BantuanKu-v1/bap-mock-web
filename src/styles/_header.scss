@@ -1,0 +1,108 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  padding: 20px 32px;
+  background-color: #ffffff;
+  border-bottom: 1px solid #e2e8f0;
+
+  &__brand {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+  }
+
+  &__brand-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 48px;
+    height: 48px;
+    border-radius: 12px;
+    background-color: #1e40af;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 700;
+  }
+
+  &__brand-info {
+    h1 {
+      margin: 0;
+      font-size: 18px;
+      font-weight: 700;
+    }
+
+    span {
+      display: block;
+      margin-top: 4px;
+      color: #64748b;
+      font-size: 13px;
+    }
+  }
+
+  &__admin {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+
+  &__avatar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #dbeafe;
+    color: #1e40af;
+    font-weight: 700;
+  }
+
+  &__admin-info {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+
+  &__admin-name {
+    font-size: 14px;
+    font-weight: 600;
+  }
+
+  &__admin-role {
+    color: #64748b;
+    font-size: 12px;
+  }
+
+  &__logout {
+    padding: 10px 16px;
+    margin-left: 12px;
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+    background-color: #ffffff;
+    color: #334155;
+    font-size: 13px;
+    font-weight: 600;
+
+    &:hover:not(:disabled) {
+      background-color: #f1f5f9;
+    }
+  }
+}
+
+@media (max-width: 640px) {
+  .header {
+    padding: 16px;
+    flex-wrap: wrap;
+
+    &__brand-info h1 {
+      font-size: 16px;
+    }
+
+    &__admin {
+      width: 100%;
+      justify-content: flex-end;
+    }
+  }
+}
