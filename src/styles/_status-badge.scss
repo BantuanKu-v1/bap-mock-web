@@ -1,0 +1,39 @@
+.status-badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 6px 10px;
+  border-radius: 999px;
+  font-size: 11px;
+  font-weight: 700;
+  white-space: nowrap;
+
+  &--submitted {
+    background-color: #dbeafe;
+    color: #1d4ed8;
+  }
+
+  &--under_review {
+    background-color: #fef3c7;
+    color: #92400e;
+  }
+
+  &--additional_information_required {
+    background-color: #ffedd5;
+    color: #c2410c;
+  }
+
+  &--approved {
+    background-color: #dcfce7;
+    color: #15803d;
+  }
+
+  &--rejected {
+    background-color: #fee2e2;
+    color: #b91c1c;
+  }
+
+  &--cancelled {
+    background-color: #f1f5f9;
+    color: #475569;
+  }
+}
