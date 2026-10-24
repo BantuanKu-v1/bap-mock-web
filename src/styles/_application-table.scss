@@ -1,0 +1,73 @@
+.application-table {
+  width: 100%;
+  overflow-x: auto;
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+  }
+
+  th {
+    padding: 14px 20px;
+    background-color: #f8fafc;
+    color: #64748b;
+    font-size: 12px;
+    font-weight: 700;
+    white-space: nowrap;
+  }
+
+  td {
+    padding: 18px 20px;
+    border-top: 1px solid #f1f5f9;
+    color: #334155;
+    font-size: 13px;
+    vertical-align: middle;
+  }
+
+  tbody tr:hover {
+    background-color: #f8fafc;
+  }
+
+  &__reference {
+    color: #1e40af;
+    font-weight: 600;
+    white-space: nowrap;
+  }
+
+  &__applicant {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+
+    strong {
+      font-size: 13px;
+      font-weight: 600;
+    }
+
+    span {
+      color: #94a3b8;
+      font-size: 12px;
+    }
+  }
+
+  &__action {
+    padding: 8px 14px;
+    border: 1px solid #bfdbfe;
+    border-radius: 7px;
+    background-color: #eff6ff;
+    color: #1d4ed8;
+    font-size: 12px;
+    font-weight: 600;
+
+    &:hover {
+      background-color: #dbeafe;
+    }
+  }
+
+  &__empty {
+    padding: 48px 20px !important;
+    color: #94a3b8 !important;
+    text-align: center;
+  }
+}
