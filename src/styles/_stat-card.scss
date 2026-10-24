@@ -1,0 +1,33 @@
+.stat-card {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  padding: 24px;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  background-color: #ffffff;
+
+  &__label {
+    color: #64748b;
+    font-size: 13px;
+    font-weight: 600;
+  }
+
+  &__value {
+    color: #0f172a;
+    font-size: 32px;
+    font-weight: 700;
+  }
+
+  &--submitted {
+    border-left: 4px solid #3b82f6;
+  }
+
+  &--review {
+    border-left: 4px solid #f59e0b;
+  }
+
+  &--approved {
+    border-left: 4px solid #22c55e;
+  }
+}
